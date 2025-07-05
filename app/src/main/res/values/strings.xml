@@ -10,8 +10,8 @@
     <!--  Values  -->
     <string name="bill_amount_hint">Bill Amount</string>
     <string name="tip_value">15%</string>
-    <string name="tip_comment">Amazing!</string>
-    <string name="tip_amount_result">7.13</string>
-    <string name="total_amount_result">18.26</string>
+    <string name="tip_comment">Good</string>
+    <string name="tip_amount_result" />
+    <string name="total_amount_result" />
 
 </resources>

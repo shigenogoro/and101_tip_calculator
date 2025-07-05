@@ -6,4 +6,10 @@
     <!-- Header Color   -->
     <color name="header_start_color">#0B1C2E</color> <!-- Dark Navy Blue -->
     <color name="header_end_color">#C2574D</color> <!-- Coral red -->
+
+    <!--  Comment Color  -->
+    <color name="comment_color_poor">#FA2E2E</color>
+    <color name="comment_color_acceptable">#FBB024</color>
+    <color name="comment_color_good">#FFC107</color>
+    <color name="comment_color_amazing">#03C134</color>
 </resources>
