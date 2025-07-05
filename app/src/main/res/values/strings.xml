@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">tip_calculator</string>
     <string name="app_title">Elite Tip Calculator</string>
+
+    <!-- Title   -->
+    <string name="base_title">Base</string>
+    <string name="tip_title">Tip</string>
+    <string name="total_amount_title">Total</string>
+
+    <!--  Values  -->
+    <string name="bill_amount_hint">Bill Amount</string>
+    <string name="tip_value">15%</string>
+    <string name="tip_comment">Amazing!</string>
+    <string name="tip_amount_result">7.13</string>
+    <string name="total_amount_result">18.26</string>
+
 </resources>

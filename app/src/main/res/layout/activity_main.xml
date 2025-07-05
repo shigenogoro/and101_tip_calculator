@@ -19,8 +19,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:src="@drawable/hualien_giants_no_background"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="10dp" />
@@ -31,13 +31,166 @@
             android:layout_height="wrap_content"
             android:text="@string/app_title"
             android:textColor="@android:color/white"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
     </LinearLayout>
 
     <!--  Body  -->
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <!--  Base Amount  -->
+        <LinearLayout
+            android:id="@+id/base_amount_container"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/body">
+
+            <TextView
+                android:id="@+id/base_amount_title"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/base_title"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/base_amount_input"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="25dp"
+                android:hint="@string/bill_amount_hint"
+                app:layout_constraintStart_toEndOf="@id/base_amount_title"
+                app:layout_constraintTop_toTopOf="@id/base_amount_title"
+                />
+        </LinearLayout>
+
+        <!--  Tip Selection Seekbar  -->
+        <LinearLayout
+            android:id="@+id/tip_selection_container"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/base_amount_container">
+
+            <TextView
+                android:id="@+id/tip_amount_value"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_value"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <LinearLayout
+                android:id="@+id/seek_bar_container"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="20dp"
+                app:layout_constraintStart_toEndOf="@id/tip_amount_value"
+                app:layout_constraintTop_toTopOf="@id/tip_amount_value">
+
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tip_comment"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--  Tip Amount  -->
+        <LinearLayout
+            android:id="@+id/tip_amount_container"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tip_selection_container">
+
+            <TextView
+                android:id="@+id/tip_amount_title"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_title"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tip_amount_result"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/tip_amount_result"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/tip_amount_title"
+                app:layout_constraintTop_toTopOf="@id/tip_amount_title"
+                />
+        </LinearLayout>
+
+        <!--  Total Amount  -->
+        <LinearLayout
+            android:id="@+id/total_amount_container"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tip_amount_container">
+
+            <TextView
+                android:id="@+id/total_amount_title"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/total_amount_title"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/total_amount_result"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="@string/total_amount_result"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/total_amount_title"
+                app:layout_constraintTop_toTopOf="@id/total_amount_title"
+                />
+        </LinearLayout>
 
 
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
