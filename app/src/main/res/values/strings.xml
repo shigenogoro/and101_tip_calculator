@@ -5,13 +5,33 @@
     <!-- Title   -->
     <string name="base_title">Base</string>
     <string name="tip_title">Tip</string>
+    <string name="tax_title">Tax</string>
     <string name="total_amount_title">Total</string>
+    <string name="num_people_title"># People</string>
+    <string name="per_person_amount_title">$/Person</string>
 
     <!--  Values  -->
     <string name="bill_amount_hint">Bill Amount</string>
     <string name="tip_value">15%</string>
     <string name="tip_comment">Good</string>
     <string name="tip_amount_result" />
+    <string name="tax_amount_result" />
     <string name="total_amount_result" />
+    <string name="number_of_people">Number of People</string>
+    <string name="per_person_amount_result" />"
+
+    <!--  Dropdown Values  -->
+    <string-array name="people_options">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 
 </resources>
